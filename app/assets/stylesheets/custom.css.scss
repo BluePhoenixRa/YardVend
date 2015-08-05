@@ -1,6 +1,44 @@
 @import "bootstrap";
-//= require bootstrap
+@import url(http://fonts.googleapis.com/css?family=Damion);
+
+body {
+  background-color: #F5F5F1; /* Azure 2 */
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-default {
+  .container-fluid {
+    background-color: #388E8E; /* Cadet Blue */
+    .navbar-nav > li > a {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .navbar-brand {
+      color: #000000;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: Damion, cursive;
+      text-shadow: 2px 0 0 #ffffff, -2px 0 0 #ffffff, 0 2px 0 #ffffff, 0 -2px 0 #ffffff, 1px 1px #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff;
+    }
+  }
+}
 
 .container-fluid {
     padding: 10px 200px;
+}
+
+.center {
+  text-align: center;
+}
+
+.col-md-3:nth-child(4n+1) {
+  clear: left;
+}
+
+.col-md-6 {
+  h3 {font-size: 45px;}
+  h5 {font-size: 25px;}
+  p {font-size: 18px;}
 }
