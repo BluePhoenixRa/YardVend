@@ -1,5 +1,9 @@
 == README
 
+# Required for devise gem, remember to change localhost:3000 to new domain name once launched
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -21,7 +25,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run
