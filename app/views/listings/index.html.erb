@@ -8,6 +8,7 @@
               <h3><%= listing.name %></h3>
               <p><strong>Price:</strong> <%= number_to_currency(listing.price) %></p>
               <p><strong>Description:</strong> <%= listing.description %></p>
+              <p><strong>Yard Owner:</strong> <%= "#{listing.user.first_name.capitalize} #{listing.user.last_name.capitalize}" %></p>
               <%= link_to 'Show', listing, class: "btn btn-link" %>
               <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
               <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
